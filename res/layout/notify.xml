@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notify"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView android:id="@+id/noti_icon"
+        android:layout_width="@android:dimen/notification_large_icon_width"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:src="@drawable/noti_icon"
+        style="@style/NotificationIcon" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/noti_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Ready to play"
+            style="@style/NotificationTitle" />
+        <!--TextView android:id="@+id/noti_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="no track is playing..."
+            style="@style/NotificationText" /-->
+        <Chronometer android:id="@+id/noti_mete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/NotificationText" />
+        <!--ProgressBar android:id="@+id/noti_proc"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:progressDrawable="@android:drawable/progress_horizontal"
+            android:indeterminate="false" 
+            android:indeterminateOnly="false"
+            style="@android:style/Widget.ProgressBar.Small" /-->
+        <TextView style="@style/DividerHorizon" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/prev_btn"
+                android:background="@drawable/prev_button"
+                style="@style/ControlButton" />
+            <TextView style="@style/DividerVertical" />
+            <Button android:id="@+id/play_btn"
+                android:background="@drawable/play_button"
+                style="@style/ControlButton" />
+            <TextView style="@style/DividerVertical" />
+            <Button android:id="@+id/next_btn"
+                android:background="@drawable/next_button"
+                style="@style/ControlButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
